@@ -139,28 +139,28 @@
         left: -205px;
         top: 15px;
 
-        // &--head{
-        //     background-image: url(../img/hook.png);
-        //     background-repeat: no-repeat;
-        //     background-size: contain;
-        //     width: 50px;
-        //     height: 50px;
-        //     position: absolute;
-        //     top: 193px;
-        //     left: -25px;
-        // }
+        &--head{
+            background-image: url(../img/hook.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 193px;
+            left: -25px;
+        }
       }
-      &-fishingRod-rope::after{
-        content: "";
-        background-image: url(../img/hook.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 193px;
-        left: -25px;
-      }
+      // &-fishingRod-rope::after{
+      //   content: "";
+      //   background-image: url(../img/hook.png);
+      //   background-repeat: no-repeat;
+      //   background-size: contain;
+      //   width: 50px;
+      //   height: 50px;
+      //   position: absolute;
+      //   top: 193px;
+      //   left: -25px;
+      // }
     }
     .lake {
       width: 150px;
