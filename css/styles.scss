@@ -1,0 +1,389 @@
+
+.container{
+    position: relative;
+    margin-left: 380px;
+    margin-top: 200px;
+    &__fisherman{
+        position:relative ;
+
+        &-head{
+
+            width: 135px;
+            height: 135px;
+            background-color: rgb(139, 229, 238);
+            border-radius: 50%;
+            border: 1px solid rgb(6, 72, 78);
+            position: relative;
+            z-index: 2000;
+            animation-name: headShake;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+          
+
+        &--leftHorn{
+
+            background-image: url(../img/leftHorn.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 26px;
+            height: 26px;
+            transform: rotate(-20deg);
+            position: absolute;
+            left: 27px;
+            top: -11px;
+            z-index: 1;
+        }
+        &--rightHorn{
+            background-image: url(../img/rightHorn.png);
+
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 26px;
+            height: 26px;
+            transform: rotate(42deg);
+            position: absolute;
+            right: 14px;
+            top: -2px;
+            z-index: 1;
+        }
+            &--midHorn {
+                width: 0;
+                height: 0;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 30px solid rgb(139, 229, 238);
+                position: absolute;
+                left: 46px;
+                top: -23px;
+                transform: rotate(5deg);
+                display: none;
+            }
+        &--face {
+            width: 76px;
+            height: 55px;
+            background-color: rgb(22, 231, 250);
+            border-radius: 40%;
+            margin-left: 29px;
+            margin-top: 17px;
+            transform: rotate(11deg);
+            position: relative;
+
+        .face__eyebrows{
+            width: 49px;
+            height: 28px;
+            border: solid 1px #000;
+            border-color: #000 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+            border-radius: 50%/22px 22px 0 0;
+            position: absolute;
+            top: 2px;
+            left: 7px;
+        
+            }
+        .lefteye{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(21, 59, 62);
+            position: absolute;
+            left: 19px;
+            top: 15px;
+        }
+        .righteye{
+            width: 16px;
+            height: 21px;
+            border: solid 2px #000;
+            border-color: #000 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+            border-radius: 50%/20px 22px 0 0;
+            position: absolute;
+            top: -1px;
+            transform: rotate(180deg);
+            left: 33px;
+            
+        }
+            .mouth{
+            width: 57px;
+            height: 28px;
+            border: solid 2px #000;
+            border-color: #000 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+            border-radius: 50%/22px 22px 0 0;
+            position: absolute;
+            top: 9px;
+            transform: rotate(180deg);
+            left: 2px;
+            }
+        }
+      }
+      &-body{
+      background-color: rgb(139, 229, 238);
+      width: 130px;
+      height: 82px;
+      margin-top: -83px;
+      z-index: 60000;
+      border-radius: 35%;
+      }
+      &-fishingRod{
+        background-color: orange;
+        width: 302px;
+        height: 6px;
+        position: absolute;
+        left: -228px;
+        top: 93px;
+        transform: rotate(212deg);
+      }
+      &-fishingRod-rope{
+        width: 2px;
+        height: 200px;
+        background-color:blue;
+        position: absolute;
+        left: -205px;
+        top: 15px;
+
+        // &--head{
+        //     background-image: url(../img/hook.png);
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+        //     width: 50px;
+        //     height: 50px;
+        //     position: absolute;
+        //     top: 193px;
+        //     left: -25px;
+        // }
+      }
+      &-fishingRod-rope::after{
+        content: "";
+        background-image: url(../img/hook.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 193px;
+        left: -25px;
+      }
+    }
+    .lake {
+      width: 150px;
+      height: 75px;
+      background-color: rgb(74, 105, 239);
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      top: 23px;
+      left: -269px;
+    }
+    .lake1{
+    top: 7px;
+    width: 150px;
+    height: 75px;
+    background-color: rgb(74, 105, 239);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    left: -269px;
+    top: 130px;
+
+    }
+
+.container__fisherman-body-lefhand {
+  // background: red;
+  // width:90px ;
+  // height: 38px;
+  // background-color: rgb(74, 105, 239);
+  // border: 2px solid rgb(74, 105, 239);
+  // border-radius: 50%/22px 22px 22px 22px;
+  position: relative;
+  .upperline{
+    width: 77px;
+    height: 13px;
+    border: solid 2px #000;
+    border-color: #000 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+    border-radius: 50%/20px 22px 0 0;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -54px;
+    left: 53px;
+  }
+  .lowerline{
+    width: 77px;
+    height: 13px;
+    border: solid 2px #000;
+    border-color: #000 rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+    border-radius: 50%/20px 22px 0 0;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -31px;
+    left: 50px;
+  }
+  .closed-fist {
+    width: 22px;
+    height: 22px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: #ffc600;
+    position: relative;
+    overflow: hidden;
+    top: -46px;
+    left: 42px;
+    z-index: 2000000;
+    transform: rotate(-54deg);
+  }
+
+  .closed-fist::before,
+  .closed-fist::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+  }
+
+  .closed-fist::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+  }
+
+  .closed-fist::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 3px;
+    right: 3px;
+  }
+}
+.container__fisherman-body-righthand{
+  position: relative;
+  .closed-fist {
+    width: 22px;
+    height: 22px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: #ffc600;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    top: -98px;
+    z-index: 2000000;
+    transform: rotate(-54deg);
+  }
+
+  .closed-fist::before,
+  .closed-fist::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+  }
+
+  .closed-fist::before {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+  }
+
+  .closed-fist::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 3px;
+    right: 3px;
+  }
+  
+}
+
+
+.mouth.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #153b3e;
+  position: absolute;
+  left: 25px;
+  top: 33px;
+  transition: all 2s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .lake::after,
+    .lake1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 200%;
+        background: linear-gradient(to bottom, #4e92ff 0%, #2377d5 50%, #0a61b0 100%);
+        background: linear-gradient(to bottom, #0077be 0%, #00a1d9 50%, #00c5dd 100%);
+
+        animation: wave 4s linear infinite;
+      }
+      @keyframes wave {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+}
+//    .container__fisherman-fishingRod-rope{
+//     transform: rotate(-24deg);
+//     left: -125px;
+//     height: 380px;
+//     top: 0px;
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes headShake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(20deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  
+  
