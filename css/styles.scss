@@ -123,9 +123,9 @@
       border-radius: 35%;
       }
       &-fishingRod{
-        background-color: orange;
+        background-color: rgb(208, 139, 12);
         width: 302px;
-        height: 6px;
+        height: 7px;
         position: absolute;
         left: -228px;
         top: 93px;
@@ -133,8 +133,9 @@
       }
       &-fishingRod-rope{
         width: 2px;
-        height: 200px;
-        background-color:blue;
+        // height: 200px;
+        height: 300px;
+        background-color:rgb(0, 0, 0);
         position: absolute;
         left: -205px;
         top: 15px;
@@ -304,24 +305,40 @@
   top: 33px;
   transition: all 2s ease;
 }
+.hookBox{
+  position: relative;
+}
+// .hook{
+//   background-image: url(../img/fishing-hook.png);
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   width: 15px;
+//   height: 15px;
+// }
+.hook {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: green;
+  top: 34px;
+  left: -229px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.hook.hook1{
+  background: rgb(13, 176, 236);
+}
+.hook.hook2{
+  background: green;
+}
+.hook.hook3{
+  background: rgb(225, 87, 6);
+}
+.hook.hook4{
+  background: rgb(179, 231, 11);
+}
+.hook.hook5{
+  background: rgb(128, 75, 0);
+}
 
 
 
@@ -336,7 +353,7 @@
         background: linear-gradient(to bottom, #4e92ff 0%, #2377d5 50%, #0a61b0 100%);
         background: linear-gradient(to bottom, #0077be 0%, #00a1d9 50%, #00c5dd 100%);
 
-        animation: wave 4s linear infinite;
+        // animation: wave 4s linear infinite;
       }
       @keyframes wave {
         0% {
@@ -346,7 +363,6 @@
           transform: translateX(100%);
         }
       }
-
 }
 //    .container__fisherman-fishingRod-rope{
 //     transform: rotate(-24deg);
@@ -360,7 +376,20 @@
 
 
 
-
+@keyframes rotatePole {
+  0%{
+    transform: rotate(2deg);
+  }
+  15%{
+    transform: rotate(3deg);
+  }
+  20%{
+    transform: rotate(-2deg);
+  }
+  25%{
+    transform: rotate(3deg);
+  }
+}
 
 
 
@@ -385,5 +414,40 @@
   }
   
   
+  .fishingBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 32px;
+    margin-top: -50px;
+  }
   
+  .upperBox {
+    width: 101px;
+    height: 0;
+    border-bottom: 51px solid green;
+    border-left: 20px solid rgba(0,0,0,0);
+    border-right: 20px solid rgba(0,0,0,0);
+    transform: skewX(-45deg);
+    transform: rotate(180deg);
+  }
   
+  .lowerBox {
+    width: 61px;
+    height: 0;
+    border-bottom: 51px solid rgb(236, 111, 8);
+    border-left: 20px solid rgba(245, 12, 12, 0);
+    border-right: 20px solid rgba(239, 11, 11, 0);
+    transform: skewX(-45deg);
+    transform: rotate(180deg);
+  }
+.boxi{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: green;
+  top: 34px;
+  left: -229px;
+  // animation: movePrize 4s linear;
+}
